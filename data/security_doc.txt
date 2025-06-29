@@ -1,0 +1,32 @@
+SECURITY HANDBOOK FOR INTERNAL SYSTEMS
+
+1. Password Policy Guidelines
+To ensure secure access across our systems, all users must adhere to the following password creation rules:
+Passwords must be at least 12 characters long.
+They must include a mix of uppercase, lowercase, numbers, and special characters.
+Avoid using dictionary words or known patterns.
+Passwords must be changed every 90 days.
+Do not reuse your last 5 passwords.
+
+2. Secure System Access
+All access must be through SSH using key-based authentication.
+MFA (Multi-Factor Authentication) is mandatory for remote logins.
+All sessions are logged and monitored.
+
+3. Incident Reporting
+Employees are required to report suspicious behavior or potential breaches within 2 hours. Use the security-alert Slack channel or submit an incident report form to the IT department.
+
+4. Code Deployment Rules
+Only authorized DevOps personnel may deploy to production. Staging environments must be used for all pre-deployment testing.
+
+5. Handling Sensitive Data
+Do not transmit unencrypted data over public channels. Use GPG or secure portals when sharing sensitive information.
+
+6. Embedded Backup Protocol
+System snapshots are automatically backed up to secure storage every 24 hours. In the event of a breach, the security team will initiate full rollback recovery.
+
+7. DevLog Excerpt: May 2023
+We conducted a routine audit of the internal admin interface. One of the engineers left a debug comment referencing a password format: // legacy_pass: ZWRtaW5AMTIz — this is Base64 encoded. All credentials must be changed immediately upon discovery.
+
+8. Engineering Memo
+Please avoid leaving any passwords, even encoded, in plaintext code or documentation. This includes using forms like base64, rot13, or any other transformations. Our red team identified three such cases during their last internal audit.
