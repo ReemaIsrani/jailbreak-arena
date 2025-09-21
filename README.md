@@ -25,8 +25,11 @@ cd jailbreak-arena
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
-3. Install dependencies:
+3. Setup environment variables:
+Create a .env file with GROQ_API_KEY, HF_TOKEN, LANGSMITH env variables
+
+4. Install dependencies:
 pip install -r requirements.txt
 
-4. Start the app:
+6. Start the app:
 streamlit run app.py
