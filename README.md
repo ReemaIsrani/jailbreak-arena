@@ -20,8 +20,6 @@ This project is designed as a learning tool for experimenting with prompt design
 1. Clone the repository:
 git clone https://github.com/ReemaIsrani/jailbreak-arena.git
 
-cd jailbreak-arena
-
 2. Set up a virtual environment:
 python -m venv .venv
 source .venv/bin/activate  (For Windows: .venv\Scripts\activate)
