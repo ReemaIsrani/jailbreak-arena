@@ -24,8 +24,7 @@ cd jailbreak-arena
 
 2. Set up a virtual environment:
 python -m venv .venv
-source .venv/bin/activate
-# Windows: .venv\Scripts\activate
+source .venv/bin/activate  (For Windows: .venv\Scripts\activate)
 
 4. Setup environment variables:
 Create a .env file with GROQ_API_KEY, HF_TOKEN, LANGSMITH env variables
