@@ -19,17 +19,22 @@ This project is designed as a learning tool for experimenting with prompt design
 
 1. Clone the repository:
 git clone https://github.com/ReemaIsrani/jailbreak-arena.git
+
 cd jailbreak-arena
 
 2. Set up a virtual environment:
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate
+# Windows: .venv\Scripts\activate
 
-3. Setup environment variables:
+4. Setup environment variables:
 Create a .env file with GROQ_API_KEY, HF_TOKEN, LANGSMITH env variables
 
-4. Install dependencies:
+5. Install dependencies:
 pip install -r requirements.txt
 
 6. Start the app:
 streamlit run app.py
+
+## Try the demo
+https://jailbreak-arena.streamlit.app/
